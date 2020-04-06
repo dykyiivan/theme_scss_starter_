@@ -45,7 +45,6 @@ ol[class] {
 
 /* A elements that don't have a class get default styles */
 a:not([class]) {
-  -webkit-text-decoration-skip: ink;
   text-decoration-skip-ink: auto;
 }
 
@@ -71,57 +70,9 @@ select {
 /* Remove all animations and transitions for people that prefer not to see them */
 @media (prefers-reduced-motion: reduce) {
   * {
-    -webkit-animation-duration: 0.01ms !important;
     animation-duration: 0.01ms !important;
-    -webkit-animation-iteration-count: 1 !important;
     animation-iteration-count: 1 !important;
-    -webkit-transition-duration: 0.01ms !important;
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
-  }
-}
-
-@font-face {
-  font-family: 'Muller';
-  src: url("/fonts/MullerRegular.woff2") format("woff2"), url("/fonts/MullerRegular.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Muller';
-  src: url("/fonts/MullerLight.woff2") format("woff2"), url("/fonts/MullerLight.woff") format("woff");
-  font-weight: 300;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Muller';
-  src: url("/fonts/MullerMedium.woff2") format("woff2"), url("/fonts/MullerMedium.woff") format("woff");
-  font-weight: 500;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Muller';
-  src: url("/fonts/MullerBold.woff2") format("woff2"), url("/fonts/MullerBold.woff") format("woff");
-  font-weight: bold;
-  font-style: normal;
-}
-
-body {
-  font-size: 14px;
-  font-family: "Muller", sans-serif;
-  color: #000;
-}
-
-.container {
-  max-width: 940px;
-  margin: 0 auto;
-}
-
-@media (max-width: 1200px) {
-  body {
-    background-color: #ccc;
   }
 }

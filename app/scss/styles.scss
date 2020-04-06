@@ -1,15 +1,24 @@
-@import"reboot";
+@import"reset";
 @import"fonts";
 @import"varible";
 
 
 
 body {
-  color: $main-color;
-  display: flex;
-  border-radius: 30px;
+  font-size: 14px;
   font-family: $main-font, sans-serif;
+  color: $font-color;
 }
+.container {
+  max-width: 940px;
+  margin: 0 auto;
+}
+
+
+
+
+
+
 
 
 // Media Queries
